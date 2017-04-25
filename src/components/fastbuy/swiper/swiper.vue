@@ -242,6 +242,7 @@
     height: 0.32rem;
     line-height: 0.32rem;
     background: #df2f32;
+    margin-top: -0.05rem;
   }
   .search{
     float: left;
