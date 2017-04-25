@@ -64,7 +64,14 @@
         <div class="order_total_all">
           <span class="order_total_left">总计</span><span class="order_total_right">￥1801.00</span>
         </div>
-        <div></div>
+        <div class="order_total_payment">
+          <span class="order_total_left">支付方式</span><span class="order_total_right">账户余额：0.00</span>
+        </div>
+      </div>
+      <div class="order_payment">
+        <div class="order_payment_zhifubao"></div>
+        <div class="order_payment_weixin"></div>
+        <div class="order_payment_yinlian"></div>
       </div>
     </div>
   </div>
@@ -84,8 +91,7 @@
     background: #ffffff;
   }
   .order_border{
-    margin: 0.48rem 0.52rem 0rem 0.52rem;
-    background: #42b983;
+    margin: 0.2rem 0.2rem 0rem 0.2rem;
     color: #ffffff;
   }
   .order_title{
@@ -120,7 +126,7 @@
   }
   .order_userinfo_order_left{
     float: left;
-    width: 0.72rem;
+    width: 0.8rem;
     height: 0.27rem;
     font-size: 0.12rem;
     line-height: 0.27rem;
@@ -128,21 +134,21 @@
   }
   .order_userinfo_order_left_2{
     float: left;
-    width: 0.72rem;
+    width: 0.8rem;
     height: 0.27rem;
     font-size: 0.12rem;
     line-height: 0.27rem;
   }
   .order_userinfo_order_right{
     float: left;
-    width: 1.98rem;
+    width: 1.96rem;
     height: 0.27rem;
     font-size: 0.12rem;
     line-height: 0.27rem;
   }
   .order_userinfo_order_select{
     float: left;
-    width: 1.99rem;
+    width: 2.55rem;
     height: 0.27rem;
     font-size: 0.12rem;
     line-height: 0.27rem;
@@ -165,6 +171,7 @@
     line-height: 0.26rem;
   }
   .order_detail_content{
+    width: 100%;
     display: inline-block;
     background: #da1b22;
     font-size: 0.12rem;
@@ -172,6 +179,7 @@
   .order_detail_content_left{
     float: left;
     display: block;
+    margin-left: 0.15rem;
     width: 0.55rem;
     height: 0.55rem;
   }
@@ -244,7 +252,7 @@
     float: left;
     text-align: right;
     font-size: 0.12rem;
-    width: 1.82rem;
+    width: 2.2rem;
   }
   .order_total_quan{
     height: 0.26rem;
@@ -257,5 +265,37 @@
   .order_total_all{
     height: 0.26rem;
     background: #a40000;
+  }
+  .order_total_payment{
+    height: 0.26rem;
+    background: #ba0d11;
+  }
+  .order_payment{
+    margin-top: 0.05rem;
+  }
+  .order_payment_zhifubao{
+    display: inline-block;
+    float: left;
+    width: 0.86rem;
+    height: 1.01rem;
+    background: url("../../../img/zhifubao.png");
+    background-size: 100% 100%;
+  }
+  .order_payment_weixin{
+    display: inline-block;
+    float: left;
+    margin-left: 0.42rem;
+    width: 0.84rem;
+    height: 1.01rem;
+    background: url("../../../img/weixin.png");
+    background-size: 100% 100%;
+  }
+  .order_payment_yinlian{
+    display: inline-block;
+    float: right;
+    width: 0.83rem;
+    height: 1.01rem;
+    background: url("../../../img/yinlian.png");
+    background-size: 100% 100%;
   }
 </style>
