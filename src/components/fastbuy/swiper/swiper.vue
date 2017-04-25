@@ -217,8 +217,7 @@
   #list dd span{
   	font-size: 0.1rem;
   	display: inline-block;
-  	
-  	max-width: 0.45rem;
+  	max-width: 0.55rem;
   	height:0.16rem;
     line-height: 0.16rem;
     margin-top: 0.04rem;
