@@ -38,13 +38,13 @@
       <router-link class="tab_item" to="/freedrink">
         <img src="../../img/na.png">
       </router-link>
-      <router-link class="tab_item" to="/freedrink">
+      <router-link class="tab_item" to="/shopcart">
         <img src="../../img/jiao.png">
       </router-link>
       <router-link class="tab_item" to="/gift" >
         <img src="../../img/hong.png">
       </router-link>
-      <router-link class="tab_item" to="/welfare">
+      <router-link class="tab_item" to="/amap">
         <img src="../../img/fu.png">
       </router-link>
     </div>

@@ -21,21 +21,45 @@
       <file leaf-file-name="swiper.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/fastbuy/swiper/swiper.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="69" column="60" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="60" />
+            <state relative-caret-position="1155">
+              <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
               <folding>
                 <element signature="n#swiper-slide#2;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#swiper-slide#3;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="n#swiper-slide#4;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="n#swiper-slide#5;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="n#swiper-slide#6;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="n#swiper-slide#7;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+                <marker date="1493115073619" expanded="true" signature="5999:6119" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="6129:6260" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="6276:6414" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="6428:6662" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="6677:6854" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="6898:6972" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="6992:7062" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7088:7219" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7243:7344" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7375:7507" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7532:7684" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7703:7750" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7771:7814" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7837:7881" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="7898:8108" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8131:8215" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8233:8299" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8319:8460" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8537:8570" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8587:8768" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8813:8958" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="8998:9045" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="9080:9311" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="9348:9579" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="9615:9808" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="9847:9981" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="10021:10093" ph="{...}" />
+                <marker date="1493115073619" expanded="true" signature="10100:10277" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fastbuy.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fastbuy.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/fastbuy/fastbuy.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
@@ -48,8 +72,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+            <state relative-caret-position="735">
+              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="18" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -60,7 +84,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="147">
               <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding>
                 <element signature="e#140#162#0" expanded="true" />
@@ -69,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="amap.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="amap.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/fastbuy/AMap/amap.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -182,8 +206,8 @@
         <option value="$PROJECT_DIR$/src/components/fastbuy/shopcart/shopcart.vue" />
         <option value="$PROJECT_DIR$/src/components/fastbuy/AMap/AMap.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/components/fastbuy/AMap/amap.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/components/fastbuy/AMap/amap.vue" />
         <option value="$PROJECT_DIR$/src/components/fastbuy/fastbuy.vue" />
       </list>
     </option>
@@ -200,7 +224,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1273" />
+    <option name="x" value="303" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
   </component>
@@ -219,39 +243,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,11 +273,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -279,11 +291,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -297,11 +309,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -319,11 +331,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wupincool" />
+              <option name="myItemId" value="H5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -339,25 +351,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AMap" />
+              <option name="myItemId" value="shopcart" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\Administrator\wupincool\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="F:\H5\node_modules\eslint" />
     <property name="standardjs.codestyle.accepted" value="true" />
   </component>
   <component name="RecentsManager">
@@ -481,22 +491,23 @@
       <workItem from="1493081664047" duration="617000" />
       <workItem from="1493086198586" duration="14381000" />
       <workItem from="1493106413982" duration="1612000" />
+      <workItem from="1493114982065" duration="299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121417000" />
+    <option name="totallyTimeSpent" value="121716000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1047" extended-state="1" />
+    <frame x="303" y="0" width="1294" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21205008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -780,25 +791,41 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/fastbuy/swiper/swiper.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="69" column="60" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="60" />
+        <state relative-caret-position="1155">
+          <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding>
             <element signature="n#swiper-slide#2;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#swiper-slide#3;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#swiper-slide#4;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#swiper-slide#5;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#swiper-slide#6;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#swiper-slide#7;n#swiper#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <marker date="1493115073619" expanded="true" signature="5999:6119" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="6129:6260" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="6276:6414" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="6428:6662" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="6677:6854" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="6898:6972" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="6992:7062" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7088:7219" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7243:7344" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7375:7507" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7532:7684" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7703:7750" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7771:7814" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7837:7881" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="7898:8108" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8131:8215" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8233:8299" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8319:8460" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8537:8570" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8587:8768" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8813:8958" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="8998:9045" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="9080:9311" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="9348:9579" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="9615:9808" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="9847:9981" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="10021:10093" ph="{...}" />
+            <marker date="1493115073619" expanded="true" signature="10100:10277" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -823,10 +850,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/fastbuy/AMap/AMap.js">
+    <entry file="file://$PROJECT_DIR$/src/components/fastbuy/AMap/AMap.js" />
+    <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="147">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="e#140#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/fastbuy/AMap/amap.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -846,20 +884,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="e#140#162#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1197">
+          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        <state relative-caret-position="735">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -870,14 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/fastbuy/AMap/amap.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>
