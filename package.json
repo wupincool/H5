@@ -13,9 +13,10 @@
   "dependencies": {
     "better-scroll": "^0.1.15",
     "vue": "^2.2.2",
-    "vue-resource": "^1.0.1",
+    "vue-amap": "^0.2.4",
     "vue-awesome-swiper": "^2.4.0",
     "vue-baidu-map": "^0.1.11",
+    "vue-resource": "^1.0.1",
     "vue-router": "^2.3.0"
   },
   "devDependencies": {

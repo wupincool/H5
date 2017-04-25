@@ -4,6 +4,8 @@ import welfare from '@/components/fastbuy/welfare/welfare';
 import bill from '@/components/fastbuy/bill/bill';
 import gift from '@/components/fastbuy/gift/gift';
 import freedrink from '@/components/fastbuy/freedrink/freedrink';
+import shopcart from '@/components/fastbuy/shopcart/shopcart';
+import amap from '@/components/fastbuy/AMap/amap';
 import fastbuy from '@/components/fastbuy/fastbuy';
 import choose from '@/components/choose/choose';
 import give from '@/components/fastbuy/gift/give/give';
@@ -39,6 +41,14 @@ export default new Router({
     {
       path: '/give',
       component: give
+    },
+    {
+      path: '/shopcart',
+      component: shopcart
+    },
+    {
+      path: '/amap',
+      component: amap
     }
   ]
 });
