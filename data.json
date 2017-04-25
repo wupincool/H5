@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "goods": [
+    {
+      "name": "新品五粮液",
+      "price": 888,
+      "description": "真品"
+    },
+    {
+      "name": "1618",
+      "price": 888,
+      "description": "真品"
+    },
+    {
+      "name": "低度",
+      "price": 888,
+      "description": "真品"
+    },
+    {
+      "name": "95专卖",
+      "price": 888,
+      "description": "真品"
+    },
+    {
+      "name": "15酱",
+      "price": 888,
+      "description": "真品"
+    },
+    {
+      "name": "交杯",
+      "price": 888,
+      "description": "真品"
+    }
+  ]
+}
