@@ -161,13 +161,7 @@
 </script>
 <style>
   #swiper{
-    position: absolute;
-    z-index:1;
-    left: 0.45rem;
-    top: 2rem;
-    width: 2.87rem;
-    /*height: 1.02rem;*/
-    background: #c31820;
+    width: 2.89rem;
   }
   #list{
     /*width: 0.92rem;

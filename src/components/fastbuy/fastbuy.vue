@@ -1,13 +1,19 @@
 <template>
   <div class="fastbuy">
-    <swiper></swiper>
+    
     <!--<div class="back-tab">-->
       <!--<router-link class="tab_item" to="/app"><</router-link>-->
       <!--<router-view></router-view>-->
     <!--</div>-->
     <div class="top-item">
-      <img src="./map.png">
+    	<el-amap></el-amap>
+      <!--<img src="./map.png">-->
     </div>
+    <div class="swiper_box">
+    	<swiper></swiper>
+    </div>
+    
+    
     <div class="fastbuy_content">
       <div class="content_detail">
         <div class="detail_left">
@@ -103,9 +109,10 @@
     position: absolute;
     top: 0.15rem;
     left: 0.33rem;
-    width: 3.10rem;
-    height: 3.27rem;
+    width: 2.89rem;
+    height: 1.67rem;
     background: #df2f32;
+    padding: 0.05rem 0.1rem;
   }
   .top-item img{
     position: absolute;
@@ -114,6 +121,19 @@
     width: 2.87rem;
     height: 1.69rem;
   }
+  
+  .swiper_box{
+  	padding-left: 0.09rem;
+  	position: absolute;
+    z-index:1;
+    left: 0.33rem;
+    top: 1.92rem;
+    width: 3.0rem;
+    background: #c31820;
+  }
+  
+  
+  
   .fastbuy_content{
     position: absolute;
     top: 3.45rem;
