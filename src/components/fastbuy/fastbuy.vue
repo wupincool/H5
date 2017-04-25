@@ -38,13 +38,13 @@
       <router-link class="tab_item" to="/freedrink">
         <img src="../../img/na.png">
       </router-link>
-      <router-link class="tab_item" to="/shopcart">
+      <router-link class="tab_item" to="/freedrink">
         <img src="../../img/jiao.png">
       </router-link>
       <router-link class="tab_item" to="/gift" >
         <img src="../../img/hong.png">
       </router-link>
-      <router-link class="tab_item" to="/amap">
+      <router-link class="tab_item" to="/welfare">
         <img src="../../img/fu.png">
       </router-link>
     </div>
@@ -104,7 +104,7 @@
     top: 0.15rem;
     left: 0.33rem;
     width: 3.10rem;
-    height: 3.20rem;
+    height: 3.27rem;
     background: #df2f32;
   }
   .top-item img{
