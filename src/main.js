@@ -7,6 +7,7 @@ import axios from 'axios';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import VueResource from 'vue-resource';
 import AMap from 'vue-amap';
+import store from './store/index.js';    //  store
 
 Vue.use(AMap);
 // 初始化vue-amap
@@ -28,6 +29,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: {
     App

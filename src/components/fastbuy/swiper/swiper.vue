@@ -2,51 +2,47 @@
   <div id="swiper">
     <!-- swiper -->
     <swiper :options="swiperOption">
-    	<swiper-slide id="list" v-for="(good ,index) in goods">
-        <dl s_index="index">
-          <dt>
-          	<img src="../../../img/shangpin_0.png">
-          	<div class="fuzzy">选择产品</div>
-          </dt>
-          <dd><span>{{good.name}}</span><p>{{good.price}}</p></dd>
-        </dl>
-      </swiper-slide>
-      
-      <swiper-slide id="list" v-for="(good ,index) in goods">
+    	<swiper-slide id="list">
         <dl>
           <dt>
           	<img src="../../../img/shangpin_0.png">
+          	<div class="fuzzy" @click="chooseProduct">选择产品</div>
           </dt>
-          <dd><span>{{good.name}}</span><p>{{good.price}}</p></dd>
+          <dd><span></span><p></p></dd>
         </dl>
       </swiper-slide>
-      <swiper-slide id="list" v-for="(good ,index) in goods">
-        <dl>
+      <swiper-slide id="list" v-for="item in goods">
+        <dl  @click="showGoodDetail(item)">
           <dt>
           	<img src="../../../img/shangpin_0.png">
           </dt>
-          <dd><span>{{good.name}}</span><p>{{good.price}}</p></dd>
-        </dl>
-      </swiper-slide>
-      <swiper-slide id="list" v-for="(good ,index) in goods">
-        <dl>
-          <dt>
-          	<img src="../../../img/shangpin_0.png">
-          </dt>
-          <dd><span>{{good.name}}</span><p>{{good.price}}</p></dd>
+          <dd><span>555{{item.name}}</span><p>{{item.price}}</p></dd>
         </dl>
       </swiper-slide>
     </swiper>
-    
+
+    <!-- 选中商品之后进行加减 -->
+    <div class="swiper_good_detail" v-show="show_swiper_good_detail">
+      <div class="swiper_good_detail_operation">
+        <div class="swiper_good_detail_operation_add" @click="operation_add"></div>
+        <div class="swiper_good_detail_operation_mid">
+          <div class="swiper_good_detail_operation_mid_sure" @click="">确认数量</div>
+          <div class="swiper_good_detail_operation_mid_num">购买数量0</div>
+        </div>
+        <div class="swiper_good_detail_operation_descrease" @click="operation_descrease"></div>
+      </div>
+    </div>
+
+
     <!--中间搜索框-->
     <div class="find">
       <div class="search">搜索</div>
       <input class="search_input">
       <button class="search_img"></button>
     </div>
-    
+
     <!--搜索页面-->
-    <div class="search_page" v-show="">
+    <div class="search_page" v-show="show_search_page">
     	<!--头部-->
       <div class="search_top">
         <p class="search_top_word">搜索产品</p>
@@ -55,12 +51,12 @@
           <img src="../../../img/search.png">
         </div>
       </div>
-      
+
       <!--商品列表-->
       <div class="search_content" ref="menuWrapper">
-      	
+
         <ul class="search_content_circle">
-        	
+
         	<!--点击显示的商品-->
         	<li class="clickGood" v-show="showClickGood">
         		<div class="clickGood_img">
@@ -71,10 +67,8 @@
 	      			<h1 class="addGoodOK"  v-if="showAddGoodOK">添加成功</h1>
 	      			<a class="clickGood_des_viewDetails">查看详情</a>
 	      			<a class="addGood" @click="clickGood_None()">确认添加</a>
-	      			
 	      		</div>
         	</li>
-        	
           <li class="search_content_circle_good" v-for="item in goods" @click="showGoodFun(item)">
             <img class="good_img" src="../../../img/good.png">
             <div class="search_content_circle_good_name">{{item.name}}</div>
@@ -87,14 +81,14 @@
           </li>
         </ul>
       </div>
-      
+
       <!--返回-->
       <div class="search_bottom">
         <div class="search_bottom_back">
-          <p>返回上一级</p>
+          <p @click="back">返回上一级</p>
         </div>
       </div>
-      
+
     </div>
   </div>
 </template>
@@ -121,7 +115,11 @@
         clickGood_price: '',
         fristshow: false,
         secondshow: false,
-        thirdshow: false
+        thirdshow: false,
+        show_search_page: false,
+        good_detail_num: 0,
+        show_swiper_good_detail: false,  // swiper_good_detail
+        arr: []
       };
     },
     created() {
@@ -155,6 +153,29 @@
             this.showAddGoodOK = false;
 						this.showClickGood = false;
         }, 2000);
+      },
+      chooseProduct() {
+        this.show_search_page = true;
+      },
+      back() {  // 选择完商品 “返回上一级”按钮
+        this.show_search_page = false;
+      },
+      operation_add() {
+        this.good_detail_num ++;
+        this.$store.state.totalcount ++;
+      },
+      operation_descrease() {
+        if (this.good_detail_num === 0) {
+          return;
+        }
+        this.good_detail_num --;
+        this.$store.state.totalcount --;
+      },
+      showGoodDetail(item) {
+        console.log(item);
+        this.arr.push(item);
+        console.log(this.arr);
+        this.show_swiper_good_detail = true;
       }
     }
   };
@@ -200,7 +221,7 @@
   	top: 0;
   	opacity: 0.7;
   }
-  
+
   #list dl dd{
   	width: 100%;
   	text-align: left;
@@ -218,7 +239,7 @@
     float: left;
     white-space:nowrap;
     text-overflow:ellipsis;
-    overflow:hidden; 
+    overflow:hidden;
   }
   #list dd p{
   	float: right;
@@ -229,7 +250,46 @@
     line-height: 0.20rem;
     height:0.20rem;
   }
-  
+  .swiper_good_detail{
+    position: absolute;
+    z-index: 999;
+    top: -1.73rem;
+    left: 0.1rem;
+    width: 2.89rem;
+    height: 1.69rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    color: white;
+    background: yellow;
+    background: url("../../../img/good.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .swiper_good_detail_operation{
+    margin-top: 1.13rem;
+    height: 0.56rem;
+    background: rgba(231, 46, 60, 0.8);
+  }
+  .swiper_good_detail_operation_add{
+    float: left;
+    width: 0.48rem;
+    height: 0.55rem;
+    background: url("../../../img/add.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .swiper_good_detail_operation_mid{
+    float: left;
+    width: 1.92rem;
+  }
+  .swiper_good_detail_operation_mid_sure{
+    border-bottom: 0.01rem solid #a50000;
+  }
+  .swiper_good_detail_operation_descrease{
+    float: right;
+    width: 0.49rem;
+    height: 0.55rem;
+    background: url("../../../img/descrease.png") no-repeat;
+    background-size: 100% 100%;
+  }
   .find{
     width: 100%;
     height: 0.32rem;
@@ -266,8 +326,8 @@
   .search_page{
     position: absolute;
     z-index:1;
-    top: -1.84rem;
-    left: -0.12rem;
+    top: -1.7rem;
+    left: 0rem;
     width: 3.10rem;
     height: 5.01rem;
     background: #e72e3c;
@@ -315,13 +375,13 @@
     overflow: hidden;
     background: white;
   }
-  
-  
+
+
   .clickGood{
   	display: inline-block;
   	width: 101%;
   }
-  
+
   	.clickGood_img{
   		width: 100%;
   		height: 1.6rem;
@@ -364,7 +424,7 @@
   		.addGood{
   			background: #7f060d;
   		}
-  
+
   	.addGoodOK{
   		position: absolute;
   		left: 0;
@@ -376,11 +436,6 @@
   		z-index: 100;
   		background: #fff;
   	}
-  
-  
-  
-  
-  
   .search_content_circle_good{
     position: relative;
     float: left;

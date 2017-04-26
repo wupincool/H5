@@ -17,20 +17,20 @@
     <div class="fastbuy_content">
       <div class="content_detail">
         <div class="detail_left">
-          <p>2<span>瓶</span></p>
+          <p>{{$store.state.totalcount}}<span>瓶</span></p>
         </div>
         <div class="detail_right">
           <div class="total_first_price">
-            <p class="left">总价 899*2</p><p class="right">1798<span>元</span></p>
+            <p class="left">总价</p><p class="right">{{$store.state.totalprice}}<span>元</span></p>
           </div>
           <div class="wel_price">
-            <p class="left">优惠</p><p class="right">70<span>元</span></p>
+            <p class="left">优惠</p><p class="right">{{$store.state.totalcount_wel}}<span>元</span></p>
           </div>
           <div class="post_price">
-            <p class="left">配送费</p><p class="right">20<span>元</span></p>
+            <p class="left">配送费</p><p class="right">{{$store.state.totalpost_price}}<span>元</span></p>
           </div>
           <div class="total_last_price">
-            <p class="left">总计</p><p class="right">1710<span>元</span></p>
+            <p class="left">总计</p><p class="right">{{$store.state.totallast_price}}<span>元</span></p>
           </div>
         </div>
       </div>
@@ -84,7 +84,10 @@
          },
          show() {
            this.showFlag = true;
-         }
+         },
+        showFromChild(data) {
+            console.log(data);
+        }
       },
       components: {
         swiper
@@ -129,9 +132,6 @@
     width: 3.0rem;
     background: #c31820;
   }
-
-
-
   .fastbuy_content{
     position: absolute;
     top: 3.45rem;
