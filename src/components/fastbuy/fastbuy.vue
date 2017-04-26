@@ -1,6 +1,6 @@
 <template>
   <div class="fastbuy">
-    
+
     <!--<div class="back-tab">-->
       <!--<router-link class="tab_item" to="/app"><</router-link>-->
       <!--<router-view></router-view>-->
@@ -12,8 +12,8 @@
     <div class="swiper_box">
     	<swiper></swiper>
     </div>
-    
-    
+
+
     <div class="fastbuy_content">
       <div class="content_detail">
         <div class="detail_left">
@@ -34,9 +34,10 @@
           </div>
         </div>
       </div>
-      <div class="pay" @click="pay">立即结算</div>
+      <router-link to="/shopcart">
+        <div class="pay">立即结算</div>
+      </router-link>
     </div>
-    <div class="fastpaydetail" v-show="showPay">价格</div>
     <div class="bottom">
       <router-link class="tab_item" to="/bill">
         <img src="../../img/wo.png">
@@ -83,10 +84,7 @@
          },
          show() {
            this.showFlag = true;
-         },
-          pay() {
-              this.showPay = true;
-          }
+         }
       },
       components: {
         swiper
@@ -121,7 +119,7 @@
     width: 2.87rem;
     height: 1.69rem;
   }
-  
+
   .swiper_box{
   	padding-left: 0.09rem;
   	position: absolute;
@@ -131,9 +129,9 @@
     width: 3.0rem;
     background: #c31820;
   }
-  
-  
-  
+
+
+
   .fastbuy_content{
     position: absolute;
     top: 3.45rem;
@@ -274,6 +272,7 @@
     height: 0.36rem;
     font-size: 0.3rem;
     line-height: 0.36rem;
+    color: white;
     background: #7f060d;
     display: inline-block;
   }

@@ -1,7 +1,7 @@
 <!-- 确认订单页面 -->
 <template>
   <div class="orderpage">
-    <div class="order_border">
+    <div class="order_border" v-show="show_order_border">
       <div class="order_title">
         <p>确认订单</p>
       </div>
@@ -69,16 +69,53 @@
         </div>
       </div>
       <div class="order_payment">
-        <div class="order_payment_zhifubao"></div>
-        <div class="order_payment_weixin"></div>
-        <div class="order_payment_yinlian"></div>
+        <div class="order_payment_zhifubao" @click="pay"></div>
+        <div class="order_payment_weixin" @click="pay"></div>
+        <div class="order_payment_yinlian" @click="pay"></div>
       </div>
     </div>
+    <div class="afterpay" v-show="show_afterpay">
+      <div class="afterpay_content">
+        <p class="afterpay_content_p1">支付成功</p>
+        <p class="afterpay_content_p2">立即分享</p>
+      </div>
+      <div class="bottom">
+        <router-link class="tab_item" to="/bill">
+          <img src="../../../img/wo.png">
+        </router-link>
+        <router-link class="tab_item" to="/freedrink">
+          <img src="../../../img/na.png">
+        </router-link>
+        <router-link class="tab_item" to="/shopcart">
+          <img src="../../../img/jiao.png">
+        </router-link>
+        <router-link class="tab_item" to="/gift" >
+          <img src="../../../img/hong.png">
+        </router-link>
+        <router-link class="tab_item" to="/amap">
+          <img src="../../../img/fu.png">
+        </router-link>
+      </div>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        show_order_border: true,
+        show_afterpay: false
+      };
+    },
+    methods: {
+      pay() {
+        this.show_order_border = false;
+        this.show_afterpay = true;
+      }
+    }
+  };
 </script>
 
 <style>
@@ -229,7 +266,7 @@
     background: #7f060d;
   }
   .order_detail_quan_p{
-    margin-left: 0.1rem;
+    margin-left: 0.15rem;
   }
   .order_total{
     margin-top: 0.05rem;
@@ -252,7 +289,7 @@
     float: left;
     text-align: right;
     font-size: 0.12rem;
-    width: 2.2rem;
+    width: 2.3rem;
   }
   .order_total_quan{
     height: 0.26rem;
@@ -297,5 +334,60 @@
     height: 1.01rem;
     background: url("../../../img/yinlian.png");
     background-size: 100% 100%;
+  }
+  .afterpay{
+    margin: 0.2rem 0.4rem 0.8rem 0.4rem;
+    padding: 0.1rem;
+    background: #af251b;
+  }
+  .afterpay_content{
+    width: 2.75rem;
+    height: 4.7rem;
+    font-size: 0.24rem;
+    line-height: 0.44rem;
+    color: white;
+    background: #c32e30;
+  }
+  .afterpay_content_p1{
+    position: relative;
+    top: 1.66rem;
+    left: 0.15rem;
+    width: 2.48rem;
+    height: 0.46rem;
+    background: #d91c22;
+    border-bottom: 0.02rem solid #ab0c10;
+  }
+  .afterpay_content_p2{
+    position: relative;
+    top: 1.66rem;
+    left: 0.15rem;
+    width: 2.48rem;
+    height: 0.46rem;
+    background: #ba0d11;
+    border-bottom: 0.02rem solid #ab0c10;
+  }
+  .bottom{
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 0.53rem;
+    text-align: center;
+    background: #ffffff;
+  }
+  .bottom img{
+    height: 0.50rem;
+  }
+  .tab_item{
+    flex: 1;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 0.24rem;
+    height: 0.63rem;
+    line-height: 0.63rem;
+    color: rgb(77,85,93);
   }
 </style>
