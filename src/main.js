@@ -6,6 +6,11 @@ import router from './router';
 import axios from 'axios';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import VueResource from 'vue-resource';
+<<<<<<< HEAD
+=======
+import AMap from 'vue-amap';
+import store from './store/index.js';    //  store
+>>>>>>> origin/master
 
 // 引入vue-amap
 import AMap from 'vue-amap';
@@ -34,6 +39,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: {
     App

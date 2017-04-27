@@ -1,6 +1,6 @@
 <template>
   <div class="fastbuy">
-    
+
     <!--<div class="back-tab">-->
       <!--<router-link class="tab_item" to="/app"><</router-link>-->
       <!--<router-view></router-view>-->
@@ -12,31 +12,32 @@
     <div class="swiper_box">
     	<swiper></swiper>
     </div>
-    
-    
+
+
     <div class="fastbuy_content">
       <div class="content_detail">
         <div class="detail_left">
-          <p>2<span>瓶</span></p>
+          <p>{{$store.state.totalcount}}<span>瓶</span></p>
         </div>
         <div class="detail_right">
           <div class="total_first_price">
-            <p class="left">总价 899*2</p><p class="right">1798<span>元</span></p>
+            <p class="left">总价</p><p class="right">{{$store.state.totalprice}}<span>元</span></p>
           </div>
           <div class="wel_price">
-            <p class="left">优惠</p><p class="right">70<span>元</span></p>
+            <p class="left">优惠</p><p class="right">{{$store.state.totalcount_wel}}<span>元</span></p>
           </div>
           <div class="post_price">
-            <p class="left">配送费</p><p class="right">20<span>元</span></p>
+            <p class="left">配送费</p><p class="right">{{$store.state.totalpost_price}}<span>元</span></p>
           </div>
           <div class="total_last_price">
-            <p class="left">总计</p><p class="right">1710<span>元</span></p>
+            <p class="left">总计</p><p class="right">{{$store.state.totallast_price}}<span>元</span></p>
           </div>
         </div>
       </div>
-      <div class="pay" @click="pay">立即结算</div>
+      <router-link to="/shopcart">
+        <div class="pay">立即结算</div>
+      </router-link>
     </div>
-    <div class="fastpaydetail" v-show="showPay">价格</div>
     <div class="bottom">
       <router-link class="tab_item" to="/bill">
         <img src="../../img/wo.png">
@@ -85,9 +86,9 @@
          show() {
            this.showFlag = true;
          },
-          pay() {
-              this.showPay = true;
-          }
+        showFromChild(data) {
+            console.log(data);
+        }
       },
       components: {
         swiper,
@@ -123,7 +124,7 @@
     width: 2.87rem;
     height: 1.69rem;
   }
-  
+
   .swiper_box{
   	padding-left: 0.09rem;
   	position: absolute;
@@ -133,9 +134,6 @@
     width: 3.0rem;
     background: #c31820;
   }
-  
-  
-  
   .fastbuy_content{
     position: absolute;
     top: 3.45rem;
@@ -276,6 +274,7 @@
     height: 0.36rem;
     font-size: 0.3rem;
     line-height: 0.36rem;
+    color: white;
     background: #7f060d;
     display: inline-block;
   }
