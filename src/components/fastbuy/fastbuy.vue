@@ -6,7 +6,7 @@
       <!--<router-view></router-view>-->
     <!--</div>-->
     <div class="top-item">
-    	<el-amap></el-amap>
+    	<amap></amap>
       <!--<img src="./map.png">-->
     </div>
     <div class="swiper_box">
@@ -60,6 +60,7 @@
 
 <script>
   import swiper from './swiper/swiper';
+  import amap from './AMap/ceshi';
     export default {
       data() {
         return {
@@ -89,7 +90,8 @@
           }
       },
       components: {
-        swiper
+        swiper,
+        amap
       }
     };
 </script>

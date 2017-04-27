@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PositionPicker/examples/positionPicker.html -->
+    <meta charset="utf-8">
+    <title>拖拽选址</title>
+    <style>
+    html,body {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        font-size: 13px;
+    }
+    
+    .map {
+        height: 300px;
+        width: 100%;
+    }
+    
+    #right {
+        color: #444;
+        background-color: #f8f8f8;
+        width: 100%;
+        float: left;
+        height: 300px;
+    }
+    
+    #start,
+    #stop,
+    #right input {
+        margin: 4px;
+        margin-left: 15px;
+    }
+    
+    .title {
+        width: 100%;
+        background-color: #dadada
+    }
+    
+    button {
+        border: solid 1px;
+        margin-left: 15px;
+        background-color: #dadafa;
+    }
+    
+    .c {
+        font-weight: 600;
+        padding-left: 15px;
+        padding-top: 4px;
+    }
+    
+    #lnglat,
+    #address,
+    #nearestJunction,
+    #nearestRoad,
+    #nearestPOI,
+    .title {
+        padding-left: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="map"></div>
+    <div id='right'>
+        <div>
+            <div class='title'>选址结果</div>
+            <div class='c'>经纬度:</div>
+            <div id='lnglat'></div>
+            <div class='c'>地址:</div>
+            <div id='address'></div>
+            <div class='c'>最近的路口:</div>
+            <div id='nearestJunction'></div>
+            <div class='c'>最近的路:</div>
+            <div id='nearestRoad'></div>
+            <div class='c'>最近的POI:</div>
+            <div id='nearestPOI'></div>
+        </div>
+    </div>
+    <script type="text/javascript" src='//webapi.amap.com/maps?v=1.3&key=160cab8ad6c50752175d76e61ef92c50&plugin=AMap.ToolBar'></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js"></script>
+    <script type="text/javascript">
+    AMapUI.loadUI(['misc/PositionPicker'], function(PositionPicker) {
+    	console.log(PositionPicker);
+        var map = new AMap.Map('container', {
+            zoom: 16,          // 地图尺寸 
+            scrollWheel: false // 鼠标滚动，地图变化否？
+        })
+        var positionPicker = new PositionPicker({
+            map: map
+        });
+
+        positionPicker.on('success', function(positionResult) {
+            document.getElementById('lnglat').innerHTML = positionResult.position;
+            document.getElementById('address').innerHTML = positionResult.address;
+            document.getElementById('nearestJunction').innerHTML = positionResult.nearestJunction;
+            document.getElementById('nearestRoad').innerHTML = positionResult.nearestRoad;
+            document.getElementById('nearestPOI').innerHTML = positionResult.nearestPOI;
+        });
+        positionPicker.on('fail', function(positionResult) {
+            document.getElementById('lnglat').innerHTML = ' ';
+            document.getElementById('address').innerHTML = ' ';
+            document.getElementById('nearestJunction').innerHTML = ' ';
+            document.getElementById('nearestRoad').innerHTML = ' ';
+            document.getElementById('nearestPOI').innerHTML = ' ';
+        });
+    
+        positionPicker.start();
+//      map.panBy(10, 1);//将地图缩放到指定的缩放比例(每次所增加的数值)
+
+//      map.addControl(new AMap.ToolBar({
+//          liteStyle: false
+//      }))
+    });
+    </script>
+</body>
+
+</html>

@@ -3,16 +3,17 @@
 	    <el-amap :vid="'amap-vue'" :zoom="zoom" :map-manager="amapManager" :plugin="plugin" :events="events">
 	       <el-amap-marker v-for="marker in markers" :position="marker"></el-amap-marker>
 	    </el-amap>
+	    <button v-on:click="addMarker" style=" z-index: 10000;">addMarker</button>
 	    <button v-on:click="getMap" style=" z-index: 10000;">get map</button>
-	    <div class="bd"></div>
+	    <button type="button" name="button" v-on:click="addZoom" style=" z-index: 10000;">zoom++</button>
+	    <button type="button" name="button" v-on:click="subZoom" style=" z-index: 10000;">zoom--</button>
+	    <button type="button" name="button" v-on:click="changeCenter" style=" z-index: 10000;">change center</button>
 	</div>
 </template>
 
 <script>
 import { AMapManager } from 'vue-amap';
-
 let amapManager = new AMapManager();
-// let mapService = new MapService();
 export default {
   name: 'amap-page',
   data: function() {
@@ -20,22 +21,11 @@ export default {
       vid: 'amap-vue-1',
       zoom: 12,
       amapManager: amapManager,
-      // mapService: mapService,
-      addressData: '',
       markers: [],
       events: {
         'moveend': () => {
           let mapCenter = this.amapManager.getMap().getCenter();
           this.center = [mapCenter.getLng(), mapCenter.getLat()];
-          console.log(this.center);
-          // this.address = mapCenter.lngLatToAddress();
-          // mapService.initMap().then(() => {
-          //	mapService.showLocation().then((result) => {
-			//	      this.addressData = result;
-			//	    }, (result) => {
-			//	      alert(result);
-			//	    });
-            // });
         },
         'zoomchange': () => {
           this.zoom = this.amapManager.getMap().getZoom();
@@ -50,13 +40,32 @@ export default {
       plugin: ['ToolBar', {
         pName: 'MapType',
         defaultType: 0,
-        events: {}
+        events: {
+          init(o) {
+            // console.log(o);
+          }
+        }
       }]
     };
   },
   methods: {
     getMap: function() {
-      console.log(this.amapManager.getMap().getCenter());
+      console.log(this.amapManager.getMap());
+      console.log(this.center);
+    },
+    addMarker: function() {
+      let lng = 121.5 + Math.round(Math.random() * 1000) / 10000;
+      let lat = 31.197646 + Math.round(Math.random() * 500) / 10000;
+      this.markers.push([lng, lat]);
+    },
+    addZoom() {
+      this.zoom++;
+    },
+    subZoom() {
+      this.zoom--;
+    },
+    changeCenter() {
+      this.center = [this.center[0] + 0.1, this.center[1] + 0.1];
       console.log(this.center);
     }
   }
@@ -64,14 +73,4 @@ export default {
 </script>
 
 <style>
-	.bd{
-		background: url(../../../img/position-picker.png) no-repeat center; 
-		width: 0.3rem; 
-		height: 0.3rem;
-		background-size: 100% 100%;
-		position: fixed;
-		left: 46%;
-    top: 36%;
-		z-index: 100000;
-	}
 </style>
