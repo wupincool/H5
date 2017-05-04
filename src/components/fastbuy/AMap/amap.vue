@@ -18,7 +18,7 @@
       return {
         vid: 'amap-vue-1',
         zoom: 12,
-        center: [120.19, 30.26],
+        center: [121.59996, 31.197646],
         events: {
           'moveend': () => {
             let mapCenter = this.amapManager.getMap().getCenter();
@@ -28,7 +28,9 @@
             this.zoom = this.amapManager.getMap().getZoom();
           },
           'click': (e) => {
-            alert('map clicked');
+            let mapCenter = this.amapManager.getMap().getCenter();
+            this.center = [mapCenter.getLng(), mapCenter.getLat()];
+            console.log(mapCenter.getLng(), mapCenter.getLat());
           }
         },
         plugin: ['ToolBar', {
@@ -70,8 +72,9 @@
     }
   };
 </script>
+
 <style>
-  .amap-page-container{
+  .amap-page-container {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -80,5 +83,13 @@
     z-index: 30;
     width: 100%;
     background: #fff;
+    font-size: 16px;
+  }
+
+  .search-box {
+    margin-top: 0px;
+    position: relative;
+    top: 65px;
+    left: 20px;
   }
 </style>

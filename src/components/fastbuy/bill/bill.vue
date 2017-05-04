@@ -4,11 +4,17 @@
     <div class="bill_tab">
       <router-link class="tab_item" to="/fastbuy"><</router-link>
       <router-view></router-view>
+      <div id="" style="height: 600px">
+      	<amap></amap>
+      	
+      </div>
+      
     </div>
   </div>
 </template>
 
 <script>
+	import amap from '../AMap/985';
   export default {
     data() {
       return {
@@ -22,6 +28,9 @@
       hideBill() {
           this.showBill = false;
       }
+    },
+    components: {
+        amap
     }
   };
 </script>
